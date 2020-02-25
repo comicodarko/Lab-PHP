@@ -6,7 +6,7 @@
  
 1. [PHP]()
   - 1.1 [Embutindo blocos PHP em páginas HTML](#parte01-1)
-  - 1.2 []
+  - 1.2 [Comentários](parte01-2)
 
 # O que é o PHP?
 
@@ -93,10 +93,29 @@ A peculiaridade o **print** é que ele retorna um valor caso o mesmo seja execut
 > Por ter duas etapas o print se torna um pouco mais lento para ser executado
 
 
-[Voltar ao índice](#indice)
-****
-
-## Páginas Estáticas x Dinâmicas
+### Páginas Estáticas x Dinâmicas
 
 Request de um arquivo .php, então repassa a solicitação para o interpretador do PHP > Abre o script solicitado, interpreta e devolvo o retorno (em HTML) para o Apache (response).
 >É por isso que o cliente não consegue ver o código PHP.
+
+[Voltar ao índice](#indice)
+****
+
+## <a name="parte01-2">Comentários</a>
+
+```php
+// Comentário de uma linha
+```
+
+```php
+# Comentário de uma linha
+```
+
+```php
+/*
+  Comentário de
+  múltiplas
+  linhas
+*/ 
+```
+****

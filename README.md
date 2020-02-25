@@ -8,7 +8,9 @@ Anotações e o possíveis devaneios sobre PHP
   - 0.2 [Conhecendo o XAMPP](#parte00-2)
 
 1. [PHP](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP)
-  - 1.1 [Embutindo blocos PHP em páginas HTML](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-1  )
+  - 1.1 [Embutindo blocos PHP em páginas HTML](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-1) 
+  - 1.1 [Comentários](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-2)
+
 2. [](#parte02)
 
 
