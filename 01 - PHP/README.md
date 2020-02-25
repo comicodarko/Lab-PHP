@@ -6,7 +6,8 @@
  
 1. [PHP]()
   - 1.1 [Embutindo blocos PHP em páginas HTML](#parte01-1)
-  - 1.2 [Comentários](parte01-2)
+  - 1.2 [Comentários](#parte01-2)
+  - 1.3 [Variáveis](#parte01-3)
 
 # O que é o PHP?
 
@@ -119,3 +120,33 @@ Request de um arquivo .php, então repassa a solicitação para o interpretador 
 */ 
 ```
 ****
+
+## <a name="parte01-3">Variáveis</a>
+
+Utilizadas para armazenamentos temporário de dados.
+
+### Tipos
+- String - Armazena textos.
+- Int - Armazena valores numéricos inteiros (positivos e negativos).
+- Float - O mesmo de int, porem com fração (10.3).
+- Boolean - Armazena estados (true, false).
+- Array - Um mapa ordenado de variáveis que se relacionam.
+
+
+### Regras para declaração de variáveis em PHP
+- Deve obrigatoriamente iniciar com o caractere **$**.
+- Não podem conter espaços ou caracteres especiais (fora o underline).
+
+PHP não suporta e nem requer definição explĺicita de tipo.
+
+### Case sensitive
+$nome - $Nome - $NOME
+
+### Exemplos
+>válidos  
+
+$nome - $ fone1 - $endereco_2
+
+>inválidos
+
+$ idade - $1fone - $número

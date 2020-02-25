@@ -9,7 +9,8 @@ Anotações e o possíveis devaneios sobre PHP
 
 1. [PHP](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP)
   - 1.1 [Embutindo blocos PHP em páginas HTML](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-1) 
-  - 1.1 [Comentários](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-2)
+  - 1.2 [Comentários](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-2)
+  - 1.3 [Variáveis](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-3)
 
 2. [](#parte02)
 
