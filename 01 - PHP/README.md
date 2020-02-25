@@ -150,3 +150,35 @@ $nome - $ fone1 - $endereco_2
 >inválidos
 
 $ idade - $1fone - $número
+
+## Variáveis - Prática
+
+Para facilitar utilizamos tag de impressão quando queremos imprimir algo:
+
+```php
+  <?php
+      $name = 'Fábio José'; //String
+      $idade = 19;  //Int
+      $peso = 50.5; //Float
+      $fumante = false; //Boolean  
+
+      //True = '1'
+      //Flase = ''
+
+      if ($fumante == true) {
+        $fumante = 'Sim';
+      } else {
+        $fumante = 'Não';
+      }
+     ?>
+
+     <h1>Ficha cadastral</h1>
+     <br>
+     <p>Nome: <?= $name ?></p>
+     <p>Idade: <?= $idade ?></p>
+     <p>Peso: <?= $peso ?></p>
+     <p>Fumante: <?= $fumante ?></p>
+```
+
+[Voltar ao índice](#indice)
+****
