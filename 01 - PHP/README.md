@@ -94,3 +94,9 @@ A peculiaridade o **print** é que ele retorna um valor caso o mesmo seja execut
 
 
 [Voltar ao índice](#indice)
+****
+
+## Páginas Estáticas x Dinâmicas
+
+Request de um arquivo .php, então repassa a solicitação para o interpretador do PHP > Abre o script solicitado, interpreta e devolvo o retorno (em HTML) para o Apache (response).
+>É por isso que o cliente não consegue ver o código PHP.

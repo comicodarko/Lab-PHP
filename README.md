@@ -4,10 +4,11 @@ Anotações e o possíveis devaneios sobre PHP
 ## Índice
 
 0. [Iniciando com servidor Apache, PHP e MySQL](#parte00)
- - 0.1 [Configurando o back-end com XAMPP](#parte00-1)
- - 0.2 [Conhecendo o XAMPP](#parte00-2)
+  - 0.1 [Configurando o back-end com XAMPP](#parte00-1)
+  - 0.2 [Conhecendo o XAMPP](#parte00-2)
 
 1. [PHP](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP)
+  - 1.1 [Embutindo blocos PHP em páginas HTML](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-1  )
 2. [](#parte02)
 
 
@@ -62,3 +63,7 @@ chmod +x xampp-installer.run
 (mudei para 8080)
 
 >O MySQL usa a porta **3306**
+
+****
+
+[Continua em 01 - PHP](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP)
