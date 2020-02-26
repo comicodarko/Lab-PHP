@@ -180,7 +180,41 @@ Para facilitar utilizamos tag de impressão quando queremos imprimir algo:
      <p>Fumante: <?= $fumante ?></p>
 ```
 
-## Concatenacao
+## Variáveis constantes
+
+São variáveis cujo o valor não pode ser modificados na instância da aplicação. Um exemplo rápido de sua utilidade é para parametrização de informações de ambiente da aplicação, por exemplo:
+
+### Ambiente de desenvolvimento
+
+BD_URL (endereco_bd_dev)
+BD_USUARIO (usuario_dev)
+BD_SENHA (senha_dev)
+****
+
+### Ambiente de produção
+
+**BD_URL** (endereco_bd_prod)  
+**BD_USUARIO** (usuario_prod)  
+**BD_SENHA** (senha_prod)  
+
+>Sendo assim, quando a aplicação for migrada para a produção, não será necessário procurar muito além disso.
+
+Para criar **constantes** é necessário usar uma função que espera dois parâmetros, sendo o primeiro o **nome** da variável e o segundo o seu **valor**.
+
+```php
+  define('BD_URL', 'endreco_bd_dev');    
+```
+>É uma boa prática para constantes sempre utilizar **caracteres maiúsculos**.
+
+A sintaxe de recuperação também é diferente, não sendo necessário o uso do $.
+```php
+
+```
+
+[Voltar ao índice](#indice)
+****
+
+## Concatenação
 
 ```php
 <?php
@@ -202,3 +236,5 @@ Algo parecido com template string:
 
 [Voltar ao índice](#indice)
 ****
+
+## If/else
