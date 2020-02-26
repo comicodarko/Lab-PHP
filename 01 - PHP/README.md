@@ -180,5 +180,25 @@ Para facilitar utilizamos tag de impressão quando queremos imprimir algo:
      <p>Fumante: <?= $fumante ?></p>
 ```
 
+## Concatenacao
+
+```php
+<?php
+  $name = 'Fábio';
+  $color = 'Azul';
+  $age = 19;
+
+  //Operador .
+  echo 'Olá ' . $name . ', vi que sua cor preferida é ' . $color . ', tem ' . $age . ' anos';
+?>
+```
+Algo parecido com template string: 
+
+```php
+  //Aspas dubplas
+  echo "Olá $name, vi que sua cor preferida é $color, tem $age anos";
+```
+> Lembrando que isso interfete no desempenho, já que as aspas duplas verificam o valor em cada variável.
+
 [Voltar ao índice](#indice)
 ****

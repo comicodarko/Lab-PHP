@@ -45,6 +45,10 @@ chmod +x xampp-installer.run
 - 1 - Para iniciar:
 ```console
  sudo /opt/lampp/lampp start
+ 
+ Apenas o apache:
+ sudo /opt/lampp/lampp startapache
+
 ```
 
 - 1.1 - Para parar:
