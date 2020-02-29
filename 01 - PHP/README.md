@@ -8,6 +8,7 @@
   - 1.1 [Embutindo blocos PHP em páginas HTML](#parte01-1)
   - 1.2 [Comentários](#parte01-2)
   - 1.3 [Variáveis](#parte01-3)
+  - 1.4 [Operadores de comparação](#parte01-4)
 
 # O que é o PHP?
 
@@ -238,3 +239,46 @@ Algo parecido com template string:
 ****
 
 ## If/else
+
+```php
+if (condição) {
+  //Trecho de código que será executado caso true
+} else {
+  //Trecho de código que será executado caso false
+}
+```
+
+```php
+if (condição) {
+  //Executado caso true
+} else if (condição) {
+  //Executado caso false na primeira e true nessa
+} else {
+  //Executado caso false em todas
+}
+```
+
+## <a name="parte01-4">Operadores de comparação (Condicionais)</a>
+
+São capazes de formar expressões condicionais para o comando **if**.
+
+### Operadores:
+
+**igual** (**==**) - Verifica se os valores comparados são **iguais**.
+
+**Idêntico** (**===**) - Verifica se os valores comparados são **iguais** e do mesmo **tipo**.
+
+**Diferente** (**!=**) - Verifica se os valores comparados são **diferentes**.
+
+**Diferente** (**<>**) - Verifica se os valores comparados são **diferentes**.
+
+**Não idêntico** (**!==**) - Verifica se os valores comparados são **diferentes** e de **tipos diferentes**.
+
+**Menor** (**<**) - Verifica se o valor da **esquerda** é **menor** que o valor da direita.
+
+**Maior** (**>**) - Verifica se o valor da **esquerda** é **maior** que o valor da direita.
+
+**Menor igual** (**<=**) - Verifica se o valor da **esquerda** é **menor** ou **igual** o valor da direita.
+
+**Maior igual** (**>=**) - Verifica se o valor da **esquerda** é **Maior** ou **igual** o valor da direita.
+
