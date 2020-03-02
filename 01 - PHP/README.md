@@ -9,6 +9,7 @@
   - 1.2 [Comentários](#parte01-2)
   - 1.3 [Variáveis](#parte01-3)
   - 1.4 [Operadores de comparação](#parte01-4)
+  - 1.5 [Operadores Lógicos](#parte01-5)
 
 # O que é o PHP?
 
@@ -287,3 +288,17 @@ São capazes de formar expressões condicionais para o comando **if**.
 ```php
 if ('a' === 'a') echo 'verdadeiro;
 ```
+
+## <a name="parte01-5"> Operadores Lógicos </a>
+
+Servem para conectar operações de comparação criando condições mais complexas de decisão:
+
+### Operadores:
+
+**E** (**&&** ou **AND**) - Verdadeiro **se todas** as expressões forem **verdadeiras**.
+
+**OU** (**||** ou **OR**) - Verdadeiro **se pelo menos uma das** expressões for **verdadeira**.
+
+**XOR** (**XOR**) - Verdadeiro apenas **se uma das expressões** for verdadeira, mas **não ambas**.
+
+**NEGAÇÃO** (**!**) - **Inverte** o resultado da expressão.
