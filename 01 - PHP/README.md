@@ -282,3 +282,8 @@ São capazes de formar expressões condicionais para o comando **if**.
 
 **Maior igual** (**>=**) - Verifica se o valor da **esquerda** é **Maior** ou **igual** o valor da direita.
 
+> Vale lembrar que if sem chaves condicionará apenas a primeira instrução, exempo:
+
+```php
+if ('a' === 'a') echo 'verdadeiro;
+```
