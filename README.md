@@ -13,6 +13,7 @@ Anotações e o possíveis devaneios sobre PHP
   - 1.3 [Variáveis](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-3)
   - 1.4 [Operadores de comparação](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-4)
   - 1.5 [Operadores Lógicos](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-5)
+  - 1.6 [Operador Ternário](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-6)
 
 2. [](#parte02)
 

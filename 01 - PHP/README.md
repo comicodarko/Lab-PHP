@@ -10,7 +10,7 @@
   - 1.3 [Variáveis](#parte01-3)
   - 1.4 [Operadores de comparação](#parte01-4)
   - 1.5 [Operadores Lógicos](#parte01-5)
-
+  - 1.6 [Operador Ternário](#parte01-6)
 # O que é o PHP?
 
 Hypertext PreProcessor.
@@ -313,4 +313,28 @@ if ($usuario_possui_cartao_loja)
 
 // False
 if (!$usuario_possui_cartao_loja)
+```
+
+## <a name="parte01-6" Operador ternário </a>
+
+Operadores ternários retornam apenas 1 instrução, diferente de if/else que podem retornar blocos de instruções. Um exemplo:
+
+```php
+// Nesse caso se verdadeiro ou falso, retorna apenas 1 instrução
+if ($usuario_possui_cartao_loja) {
+  echo "Sim";
+} else {
+  echo "Não";
+}
+
+// Com operador ternário
+<?= $usuario_possui_cartao_loja ? "Sim" : "Não"; ?>
+
+// Ou
+
+<?php
+  $teste = $recebeu_desconto_frete ? 'Sim' : 'Não';
+  echo $teste;
+?>
+
 ```
