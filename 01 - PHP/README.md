@@ -11,6 +11,8 @@
   - 1.4 [Operadores de comparação](#parte01-4)
   - 1.5 [Operadores Lógicos](#parte01-5)
   - 1.6 [Operador Ternário](#parte01-6)
+  - 1.7 [Switch](#parte01-7)
+
 # O que é o PHP?
 
 Hypertext PreProcessor.
@@ -336,5 +338,75 @@ if ($usuario_possui_cartao_loja) {
   $teste = $recebeu_desconto_frete ? 'Sim' : 'Não';
   echo $teste;
 ?>
-
 ```
+
+### Pequeno exercicio de fixação
+
+Um script capaz de identificar se uma determinada pessoa pode ou não doar sangue.  
+Utilize as variáveis **$idade** e **$peso** no processo.  
+Faça atribuição de valores as variáveis de forma **estática**.
+> Se a idade informada estiver entre (e inclusive) **16 e 69** anos e o peso for igual ou superior a **50kg**, então o sistema deve imprmiir a mensagem "Atende aos requisitos", caso o contrário será impresso "Não atende aos requisitos".
+
+```php
+$idade = 30;
+$peso = 50.3;
+
+  if (($idade >= 16 && $idade <= 69) && $peso >= 50) {
+    echo "Atende aos requisitos";
+  } else {
+    echo "Não atende aos requisitos";
+  }
+```
+
+## <a name="parte01-07"> Switch </a>
+
+É um condicional, porém mais especifico/restrito que um if/else.
+
+```php 
+$opcao = 2
+
+switch (opcao) {
+  case 1:
+  //código
+  break;
+
+  case 2:
+  //código
+  break;
+
+  case 3:
+  //código
+  break;
+
+  default:
+  //funciona como um "else"
+  break
+}
+```
+
+> Lembrando que essa comparação é por igualdade e não por idêntidade logo por exemplo **"2"** irá seguir o fluxo de **2**.
+
+### True = 1
+
+```php
+$parametro = true;
+
+  switch($parametro) {
+    case 1:
+      echo "Entrou no case 1";
+      break;
+      
+    case 2:
+      echo "Entrou no case 2";
+      break;
+      
+    case true:
+      echo "Entrou no case 3";
+      break;
+
+    default:
+      echo "Entrou no default";
+      break;
+  }
+```
+> No caso a cima ele irá seguir o case 1, já que o PHP internamente trata o valor true como 1.
