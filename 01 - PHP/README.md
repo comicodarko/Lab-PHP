@@ -12,6 +12,7 @@
   - 1.5 [Operadores Lógicos](#parte01-5)
   - 1.6 [Operador Ternário](#parte01-6)
   - 1.7 [Switch](#parte01-7)
+  - 1.8 [Casting de tipos](#parte01-08)
 
 # O que é o PHP?
 
@@ -410,3 +411,83 @@ $parametro = true;
   }
 ```
 > No caso a cima ele irá seguir o case 1, já que o PHP internamente trata o valor true como 1.
+
+[Voltar ao índice](#indice)
+
+## <a name="parte01-08"> Casting de tipos </a>
+
+Converter uma variável de um tipo para o outro.
+
+A função **gettype()** espera uma variável como parâmetro e retorna o tipo da variável.
+
+De **int** para **float**.
+
+```php
+$valor = 2;
+$valor2 = (float) $valor;
+```
+> **float** pode ser subistituído por **real**
+
+De **int** para **string**.
+
+```php
+$valor = 2;
+$valor2 = (string) $valor;
+```
+
+De **float** para **int**
+```php
+$valor = 2.90;
+$valor2 = (int) $valor;
+```
+> Lembrando que o número perderá o valor fracionado.
+
+De **float** para **string**
+```php
+$valor = 2.90;
+$valor2 = (string) $valor;
+```
+> Lembrando que todos os caracteres serão convertidos.
+
+De **string** para **int**
+```php
+$valor = "2.90";
+$valor2 = (int) $valor;
+```
+> Lembrando que mesmo sendo string o valor fracionado será perdido.
+
+> Lembrando que caso a string não seja números um 0 será retornado.
+
+De **string** para **float**
+```php
+$valor = "2.90";
+$valor2 = (float) $valor;
+```
+> O valor fracionado será preservado. 
+
+### Em boolean controlamos estados, verdadeiro ou falso
+
+O fato da variável representar um valor válido retornará true, seja numérico ou textual:
+
+De **string** para **boolean**
+```php
+$valor = "2.90";
+$valor2 = (boolean) $valor;
+```
+> Retornará 1, já que 1 = true.
+
+De **string** para **boolean**
+```php
+$valor = "";
+$valor2 = (boolean) $valor;
+```
+> False não tem um valor logo não retorna nd.
+
+De **boolean** para **int**
+```php
+$valor = true;
+$valor2 = (int) $valor;
+```
+> No caso de true retornará 1 e false retornará 0. O mesmo acontece de boolean para string, porém em formato textual.
+
+[Voltar ao índice](#indice)
