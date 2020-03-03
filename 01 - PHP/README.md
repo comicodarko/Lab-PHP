@@ -302,3 +302,15 @@ Servem para conectar operações de comparação criando condições mais comple
 **XOR** (**XOR**) - Verdadeiro apenas **se uma das expressões** for verdadeira, mas **não ambas**.
 
 **NEGAÇÃO** (**!**) - **Inverte** o resultado da expressão.
+
+### Para variáveis com valor boolean, o resultado da expressão é o mesmo.
+
+```php
+$usuario_possui_cartao_loja = true;
+
+// True
+if ($usuario_possui_cartao_loja)
+
+// False
+if (!$usuario_possui_cartao_loja)
+```
