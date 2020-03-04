@@ -16,6 +16,8 @@ Anotações e o possíveis devaneios sobre PHP
   - 1.6 [Operador Ternário](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-6)
   - 1.7 [Switch](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-7)
   - 1.8 [Casting de tipos](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-8)
+  - 1.9 [Operadores Aritméticos](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-9)
+  
 
 2. [](#parte02)
 

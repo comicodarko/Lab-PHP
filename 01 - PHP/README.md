@@ -12,7 +12,8 @@
   - 1.5 [Operadores Lógicos](#parte01-5)
   - 1.6 [Operador Ternário](#parte01-6)
   - 1.7 [Switch](#parte01-7)
-  - 1.8 [Casting de tipos](#parte01-08)
+  - 1.8 [Casting de tipos](#parte01-8)
+  - 1.9 [Operadores aritméticos](#parte01-9)
 
 # O que é o PHP?
 
@@ -489,5 +490,50 @@ $valor = true;
 $valor2 = (int) $valor;
 ```
 > No caso de true retornará 1 e false retornará 0. O mesmo acontece de boolean para string, porém em formato textual.
+
+[Voltar ao índice](#indice)
+
+## <a name="parte01-9">Operadores Aritméticos</a>
+
+São operadores matemáticos que nos permite fazer calculos.
+
+**Adição** ( + ) - Soma de valores.  
+**Subtração** ( - ) - Diferença entre valores.  
+**Multiplicação** ( * ) - Produto dos valores. 
+**Divisão** ( / ) - Quociente dos valores.
+**Módulo** ( % ) - Resto existente em uma operação de vivisão.
+
+```php
+$num1 = 13;
+$num2 = 4;
+
+echo 'A soma entre $num1 e $num2 é: ' . ($num1 + $num2);
+echo '<br />';
+echo 'A subtração entre $num1 e $num2 é: ' . ($num - $num2);
+echo '<br />';
+echo 'A multiplicação entre $num1 e $num2 é: ' ($num1 * $num2);
+echo '<br />';
+echo 'A divisão entre $num1 e $num2 é: ' . ($num1 / $num2);
+echo '<br />';
+echo 'O módulo entre $num1 e $num2 é: ' . ($num1 % $num2);
+    
+  ```
+
+### Operações aritméticas na atribuição de valores
+
+Jeito simples:
+```php
+$x = 10;
+$x = $x + 5;
+```
+
+Jeito 'combinado':
+```php
+$x = 10;
+$x += 5;
+```
+> O resultado será o mesmo, sendo possível usar também para subtração, divisão, multipicação e módulo :).
+
+> Lembrando que o operador aritmético fica sempre a **esquerda**.
 
 [Voltar ao índice](#indice)
