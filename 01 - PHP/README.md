@@ -321,7 +321,7 @@ if ($usuario_possui_cartao_loja)
 if (!$usuario_possui_cartao_loja)
 ```
 
-## <a name="parte01-6" Operador ternário </a>
+## <a name="parte01-6"> Operador ternário </a>
 
 Operadores ternários retornam apenas 1 instrução, diferente de if/else que podem retornar blocos de instruções. Um exemplo:
 
@@ -416,6 +416,8 @@ $parametro = true;
 > No caso a cima ele irá seguir o case 1, já que o PHP internamente trata o valor true como 1.
 
 [Voltar ao índice](#indice)
+
+****
 
 ## <a name="parte01-08"> Casting de tipos </a>
 
@@ -555,3 +557,30 @@ Operadores que permitem adicionar ou remover 1 unidade de um valor numérico.
 [Voltar ao índice](#indice)
 ****
 
+## <a name="parte01-11"> Funções </a>
+
+Encapsular um bloco de códigos para reutilização. Pequenos "sub programas" para uma finalizade especifica, evitando a redudância de código.
+
+Declaração:
+```php
+function exibirBoasVindas() {
+
+  echo 'Bem-vindo ao curso de PHP';
+
+}
+```
+> É recomendado usar para nomes de funções duas palavras combinadas, sendo a primeira um verbo no infinitivo e a segunda substantivo.
+
+Outro exemplo:
+
+```php
+function calcularAreaTerreno($largura, $comprimento) {
+
+  $area = $largunra * $terreno;
+
+  return $area;
+}
+```
+> Note o uso de parâmetros (ou argumentos).
+
+A função **exibirBoasVidas** é do tipo void, já que ela não tem um retorno definido.
