@@ -14,6 +14,8 @@
   - 1.7 [Switch](#parte01-7)
   - 1.8 [Casting de tipos](#parte01-8)
   - 1.9 [Operadores aritméticos](#parte01-9)
+  - 1.10 [Operadores de incremento/decremento](#parte01-10)
+  - 1.11 [Funções](#parte01-11)
 
 # O que é o PHP?
 
@@ -493,6 +495,8 @@ $valor2 = (int) $valor;
 
 [Voltar ao índice](#indice)
 
+****
+
 ## <a name="parte01-9">Operadores Aritméticos</a>
 
 São operadores matemáticos que nos permite fazer calculos.
@@ -537,3 +541,17 @@ $x += 5;
 > Lembrando que o operador aritmético fica sempre a **esquerda**.
 
 [Voltar ao índice](#indice)
+****
+
+## <a name="parte01-10">Operadores de incremento/decremento</a>
+
+Operadores que permitem adicionar ou remover 1 unidade de um valor numérico.
+
+**Pré-incremento** (++$a) - Adiciona 1 unidade antes de retornar $a.   
+**Pós-incremento** ($a++) - Retorna $a e depois adiciona 1 unidade.  
+**Pré-decremento** (--$a) - Remove 1 unidade antes de retornar $a.  
+**Pré-incremento** (++$a) - Retorna $a e dopois remove 1 unidade.
+
+[Voltar ao índice](#indice)
+****
+
