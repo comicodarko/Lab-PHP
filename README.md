@@ -19,6 +19,7 @@ Anotações e o possíveis devaneios sobre PHP
   - 1.9 [Operadores Aritméticos](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-9)
   - 1.10 [Operadores de incremento/decremento](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-10)
   - 1.11 [Funções](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-11)
+  - 1.12 [Funções para manipular strings](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-12)
 
 2. [](#parte02)
 

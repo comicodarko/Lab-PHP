@@ -16,6 +16,7 @@
   - 1.9 [Operadores aritméticos](#parte01-9)
   - 1.10 [Operadores de incremento/decremento](#parte01-10)
   - 1.11 [Funções](#parte01-11)
+  - 1.12 [Funções para manipular strings](#parte01-12)
 
 # O que é o PHP?
 
@@ -584,3 +585,70 @@ function calcularAreaTerreno($largura, $comprimento) {
 > Note o uso de parâmetros (ou argumentos).
 
 A função **exibirBoasVidas** é do tipo void, já que ela não tem um retorno definido.
+
+### Exercicio de fixação
+
+Crie uma função para calcular o imposto de renda a ser pago com base em um salário passado por parâmetro.
+
+```php
+    <?php
+    $aliquota = '';
+    $imposto = 0;
+
+    function calcularImposto($salario) {
+      if ($salario <= 1903.93) {
+        $aliquota = 'isento';
+      } else if ($salario <= 2826.65) {
+        $aliquota = 7.5;
+      } else if ($salario <= 3751.05) {
+        $aliquota = 15;
+      } else if ($salario <= 4664.68) {
+        $aliquota = 22.5;
+      } else if ($salario > 4664.68) {
+        $aliquota = 27.5;
+      }
+
+      switch($aliquota) {
+        case 7.5:
+        $imposto = $salario * 0.075;
+        break;
+
+        case 15:
+        $imposto = $salario * 0.15;
+        break;
+
+        case 22.5:
+        $imposto = $salario * 0.225;
+        break;
+
+        case 27.5:
+        $imposto = $salario * 0.275;
+        break;
+
+        default:
+        $imposto = 0;
+
+      }
+      echo "Seu salário é de R$$salario reais, seu aliquota é de $aliquota%, sendo assim o imposto é de R$$imposto reais.";
+    }
+
+    calcularImposto(2826.66);
+    ?>
+```
+
+## <a name="parte01-12">Funções nativas para manipular strings</a>
+
+**strtolower**($texto) - Transforma todos os caracteres da string em **minúsculos**.
+
+**strtoupper**($texto) - Transforma todos os caracteres da tring em **maiúsculos**.
+
+**ucfirst**($texto) - Transforma o **primeiro** caracter da string em **maiúsculo**.
+
+**strlen**($texto) - Conta a **quantidade** de caracteres de uma string.
+> Lembrando que espaço também é caractere.
+
+**str_replace**(< procura por >, < subistitui por >, $texto ) - Subistitui uma cadeia de caracteres por outra dentro de uma string.
+> Lembrando que é CASE SENSITIVE.
+> Pode ser usado para substituir ( . ) por ( , ) em números float.
+
+**substr**($texto, < posição inicial >, < qtde caracteres >) - Retorna parte de uma string apartir de uma posição. 
