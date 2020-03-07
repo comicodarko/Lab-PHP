@@ -635,6 +635,8 @@ Crie uma função para calcular o imposto de renda a ser pago com base em um sal
     calcularImposto(2826.66);
     ?>
 ```
+[Voltar ao índice](#indice)
+****
 
 ## <a name="parte01-12">Funções nativas para manipular strings</a>
 
@@ -652,3 +654,28 @@ Crie uma função para calcular o imposto de renda a ser pago com base em um sal
 > Pode ser usado para substituir ( . ) por ( , ) em números float.
 
 **substr**($texto, < posição inicial >, < qtde caracteres >) - Retorna parte de uma string apartir de uma posição. 
+
+[Voltar ao índice](#indice)
+****
+
+## <a name="">Funções nativas parar tarefas matemáticas</a>
+
+**ceil**($numero) - Arredonda o valor para **cima**.  
+> Atenção em valores negativos. -2.3 será arredondado para -2
+
+**floor**($numero) - Arredonda o valor para **baixo**.  
+> Atenção em valores negativos. -2.3 será arredondado para -3
+
+**round**($numero) - **Arredonda** o valor com vase nas casas decimais.
+> Para **baixo** caso **.0** até **.4**.  
+> Para **cima** caso maior ou igual a **.5**.
+
+**rand**(< inicio do intervalo >, < final do intervalo >) - Gera um inteiro aleatório.
+
+**sqrt**($numero) - Retorna a raiz quadrada.
+
+**getrandmax**() - Retorna o valor máximo do sistema operacional.
+
+
+[Voltar ao índice](#indice)
+****
