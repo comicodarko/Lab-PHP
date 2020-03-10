@@ -17,6 +17,8 @@
   - 1.10 [Operadores de incremento/decremento](#parte01-10)
   - 1.11 [Funções](#parte01-11)
   - 1.12 [Funções para manipular strings](#parte01-12)
+  - 1.13 [Funções para tarefas matemáticas](#parte01-13)
+  - 1.14 [Funções para manipular datas](#parte01-14)
 
 # O que é o PHP?
 
@@ -658,7 +660,7 @@ Crie uma função para calcular o imposto de renda a ser pago com base em um sal
 [Voltar ao índice](#indice)
 ****
 
-## <a name="">Funções nativas parar tarefas matemáticas</a>
+## <a name="parte01-13">Funções nativas parar tarefas matemáticas</a>
 
 **ceil**($numero) - Arredonda o valor para **cima**.  
 > Atenção em valores negativos. -2.3 será arredondado para -2
@@ -676,6 +678,41 @@ Crie uma função para calcular o imposto de renda a ser pago com base em um sal
 
 **getrandmax**() - Retorna o valor máximo do sistema operacional.
 
+abs($numero) - Retorna o valor absoluto.
+> Caso for negativo ele retornará positivo. 
 
 [Voltar ao índice](#indice)
 ****
+
+## <a name="parte01-13">Funções nativas para manipular datas</a>
+
+Vale lembrar que para calculo e recomendado usar **ano mês dia**.
+
+**date**(formato) -> Recupera a data atual  
+Ela tem diversos tokens para serem combinados e retornar a saída da data atual.
+```php
+  echo date('d');
+  echo date('d/m/Y H:i:');
+```
+>https://www.php.net/manual/pt_BR/function.date
+
+**date_defaul_timezone_get**(timezone) - Recupera o timezone default da aplicação.
+```php
+echo date_defaul_timezone_get();
+```
+> Por padrão irá retornar a timezone padrão do PHP, Europe/Berlin.
+
+**date_defaul_timezone_set**(timezone) - Atualiza o timezone default da aplicação.
+
+```php
+echo date_default_timezone_set('America/Sao_Paulo');
+```
+
+**strtotime**(data) - Transforma datas textuais em segundos.
+
+Em PHP o retorno é em segundos, diferente do JavaScript que é retornado em milissegundos.
+
+```php
+echo $time_inicial = strtotime($data_inicial);
+```
+>lembrando essa função espera '**ano-mes-dia**' (separados por traço).

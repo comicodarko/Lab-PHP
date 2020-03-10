@@ -20,6 +20,8 @@ Anotações e o possíveis devaneios sobre PHP
   - 1.10 [Operadores de incremento/decremento](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-10)
   - 1.11 [Funções](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-11)
   - 1.12 [Funções para manipular strings](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-12)
+  - 1.13 [Funções para tarefas matemáticas](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-14)
+  - 1.14 [Funções para manipular datas](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-14)
 
 2. [](#parte02)
 
@@ -83,3 +85,5 @@ chmod +x xampp-installer.run
 ****
 
 [Continua em 01 - PHP](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP)
+
+****
