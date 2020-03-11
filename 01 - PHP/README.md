@@ -20,6 +20,7 @@
   - 1.13 [Funções para tarefas matemáticas](#parte01-13)
   - 1.14 [Funções para manipular datas](#parte01-14)
   - 1.15 [Arrays](#parte01-15)
+  - 1.16 [Arrays - Métodos de pesquisa](#parte01-15)
 
 # O que é o PHP?
 
@@ -776,6 +777,58 @@ $lista_coisas = [
     'José'
   ]
 ];
+```
+
+[Voltar ao índice](#indice)
+
+****
+
+## <a name="parte01-15">Arrays - Métodos de pesquisa</a>
+
+Como podemos realizar pesquisas dentro de arrays com o PHP?
+
+**in_array**('item', $nomeArray) - Retorna **true ou false** para a existência do que está sendo procurado.
+
+```php
+in_array('Maçã', $lista_frutas);
+```
+> Caso true = 1  
+> Caso false = vazio
+
+Um pequeno exemplo de tratação de retorno:
+```php
+$existe = in_array('Maçã', $lista_frutas);
+
+  if($existe) {
+    echo "Sim, existe";
+  } else {
+    echo "Não, não existe";
+  }
+```
+
+**array_search**('item', $nomeArray) - Retorna o **indice do valor** pesquisado, caso ele exista.
+
+```php
+array_search('Maçã', $lista_frutas);
+```
+> Caso não exista retorna **null** e não false.
+
+```php
+$existe = in_array($fruta, $lista_frutas);
+
+  if($existe) {
+    echo "Sim, existe e está no indice: " array_search($fruta, $lista_frutas);
+  } else {
+    echo "Não, não existe";
+  }
+```
+
+### Como funcionam as pesquisas em Arrays multidimensionais?
+
+Por enquanto, enquanto não avançamos:
+
+```php
+echo in_array('Uva', $lista_coisas['frutas']);
 ```
 
 [Voltar ao índice](#indice)

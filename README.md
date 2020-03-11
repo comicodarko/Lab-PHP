@@ -23,6 +23,7 @@ Anotações e o possíveis devaneios sobre PHP
   - 1.13 [Funções para tarefas matemáticas](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-14)
   - 1.14 [Funções para manipular datas](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-14)
   - 1.15 [Arrays](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-15)
+  - 1.16 [Arrays - Métodos de pesquisa](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-16)
 
 2. [](#parte02)
 
