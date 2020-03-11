@@ -763,6 +763,20 @@ $lista_frutas['w'] = 'Teclado';
 
 ## Array multidimensional
 
+São **arrays de arrays**
+
+```php
+$lista_coisas = [
+  'Frutas' => [
+    'Banana',
+    'Maçã'
+  ],
+  'Pessoas' => [
+    'Fábio',
+    'José'
+  ]
+];
+```
 
 [Voltar ao índice](#indice)
 
