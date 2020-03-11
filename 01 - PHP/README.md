@@ -19,6 +19,7 @@
   - 1.12 [Funções para manipular strings](#parte01-12)
   - 1.13 [Funções para tarefas matemáticas](#parte01-13)
   - 1.14 [Funções para manipular datas](#parte01-14)
+  - 1.15 [Arrays](#parte01-15)
 
 # O que é o PHP?
 
@@ -716,3 +717,53 @@ Em PHP o retorno é em segundos, diferente do JavaScript que é retornado em mil
 echo $time_inicial = strtotime($data_inicial);
 ```
 >lembrando essa função espera '**ano-mes-dia**' (separados por traço).
+
+[Voltar ao índice](#indice)
+****
+
+## <a name="parte">Array</a>
+
+### O que são Arrays?
+São listas ordenadas, variáveis que nos permitem relacionar itens associados a indices.  
+
+#### Sequênciais:
+```php
+$lista_frutas = array('Banana', 'Maçã', 'Morango', 'Uva');
+```
+
+Forma simplificada:
+```php
+$lista_frutas = ['Banana', 'Maçã', 'Morango', 'Uva'];
+```
+
+Para **adicionar** um item a um array:
+```php
+$lista_frutas[] = 'Abacaxi';
+```
+
+Para retornar apenas 1 item:
+```php
+echo $lista_frutas[<Indice desejado>];
+```
+
+### Associativo:
+```php
+$lista_compras = [
+  'a' => 'Camisa',
+  'b' => 'Tênis',
+  'x' => 'Chocolate',
+  'z' => 'Mouse'
+];
+```
+
+Para **adicionar** um item a um array associativo:
+```php
+$lista_frutas['w'] = 'Teclado';
+```
+
+## Array multidimensional
+
+
+[Voltar ao índice](#indice)
+
+****
