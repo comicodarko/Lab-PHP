@@ -20,7 +20,9 @@
   - 1.13 [Funções para tarefas matemáticas](#parte01-13)
   - 1.14 [Funções para manipular datas](#parte01-14)
   - 1.15 [Arrays](#parte01-15)
-  - 1.16 [Arrays - Métodos de pesquisa](#parte01-15)
+  - 1.16 [Arrays - Métodos de pesquisa](#parte01-16)
+  - 1.17 [Extra: False, Null e Empty](#parte01-17)
+  - 1.18 [Funções para manipular Arrays](#parte01-18)
 
 # O que é o PHP?
 
@@ -834,3 +836,110 @@ echo in_array('Uva', $lista_coisas['frutas']);
 [Voltar ao índice](#indice)
 
 ****
+
+## <a name="parte01-17">False, Null e Empty</a>
+
+É importante saber sobre esses valores parar evitar inconsistência em códigos.
+
+**is_null** retorna true, caso a variável seja null. 
+
+```php
+$funcionario1 = null;
+$funcionario2 = '';
+
+//Valores null
+if(is_null($funcionario1)) {
+  echo 'Sim, a variável é null';
+} else {
+  echo 'Não, a variável não é null';
+}
+
+  echo '<hr />';
+
+  if(is_null($funcionario2)) {
+    echo 'Sim, a variável é null';
+  } else {
+    echo 'Não, a variável não é null';
+  }
+```
+
+**empty** retorna true, caso a variável esteja vazia.
+
+```php
+//Valores vazios
+  if(empty($funcionario1)) {
+    echo 'Sim, a está vazia';
+  } else {
+    echo 'Não, a variável não está vazia';
+  }
+
+  echo '<hr />';
+
+  if(empty($funcionario2)) {
+    echo 'Sim, a está vazia';
+  } else {
+    echo 'Não, a variável não está vazia';
+  }
+```
+> Vale lembrar que **null é considerado vazio**.
+
+E por fim, **false é considerado vazio**.
+
+[Voltar ao índice](#indice)
+
+****
+
+## <a name="parte01-18">Funções nativas para manipular arrays</a>
+
+**is_array**(array) - Verifica se o parâmetro é um array.
+```php
+$array = 'String';
+$retorno = is_array($array);
+
+if($retorno) {
+  echo "Sim, é um array";
+} else {
+  echo "Não, não é um array";
+}
+```
+
+**array_keys**(array) - Retorna todas as chaves de um array.
+```php
+array_keys($array);
+```
+> Retornará um "Array" de chaves.
+
+**sort**(array) - Ordena um array e reajusta seus índices.
+```php
+sort($array);
+```
+
+> Vale lembrar que retorna true ou false, caso consiga ordenar ou não. **O MESMO ATUA SOBRE O PRÓPRIO ARRAY**.
+
+**asort**(array) - Ordena um array **preservando** os índices.
+```php
+asort($array);
+```
+> **O MESMO ATUA SOBRE O PRÓPRIO ARRAY**.
+
+**count**(array) - Conta a quantidade de elementos de um array.
+```php
+count($array);
+```
+
+**array_merge**(array) - Funde um ou mais arrays.
+```php
+$array_novo = array_merge($array1, $array2, $array3);
+```
+
+**explode**(array) - Divide uma string baseada em um delimitador.
+```php
+string = '12/03/2020';
+$array = explode('/', $string);
+```
+
+**implode**(array) - Junta elementos de um array em uma string.
+```php
+$array = ['12', '03', '2020'];
+$string_retorno = implode('/', $array);
+```

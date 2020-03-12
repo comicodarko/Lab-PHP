@@ -24,6 +24,8 @@ Anotações e o possíveis devaneios sobre PHP
   - 1.14 [Funções para manipular datas](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-14)
   - 1.15 [Arrays](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-15)
   - 1.16 [Arrays - Métodos de pesquisa](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-16)
+  - 1.17 [Extra: False, Null e Empty](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-17)
+  - 1.18 [Funções para manipular Arrays](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-18)
 
 2. [](#parte02)
 
