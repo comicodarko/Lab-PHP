@@ -23,6 +23,7 @@
   - 1.16 [Arrays - Métodos de pesquisa](#parte01-16)
   - 1.17 [Extra: False, Null e Empty](#parte01-17)
   - 1.18 [Funções para manipular Arrays](#parte01-18)
+  - 1.19 [Loops](#parte01-19)
 
 # O que é o PHP?
 
@@ -943,3 +944,109 @@ $array = explode('/', $string);
 $array = ['12', '03', '2020'];
 $string_retorno = implode('/', $array);
 ```
+
+## <a name="parte01-19">Loops</a>
+São estruturas que permitem com que a gente faça a repetição de um comando ou um bloco de códigos até atender uma condição.
+
+### While
+Enquanto ... Faça ...
+```php
+while(condicao) {
+  //Código repetido
+  
+  //Incremento para não criar um loop infinito
+}
+```
+Ex:
+```php
+$num = 1;
+while($num <= 10) {
+  echo $num;
+  $num++;
+}
+```
+> Nesse exemplo irá parar qnd num valer 11, logo imprimirá até o número 10.
+
+Vale lembrar que o uso do **break** irá parar a repetição, idependênte se a condição foi atendida ou não.  
+Ex:
+
+```php
+while(true) {
+  
+  echo $num;
+  
+  if($num >= 100) {
+    break;
+  }
+
+  $num++;
+}
+```
+> Também é possível criar vários breaks com condições diferentes.
+
+Temos também o **continue** que não para a aplicação mas pula para a próxima intereção do laço.
+> Cuidado a usar continue antes do incremento. 
+
+Ex:
+```php
+$num = 0;
+  while($num < 10) {
+
+  $num++;
+
+  if($num == 2 || $num == 6) {
+    continue;
+  }
+  echo $num;
+}
+```
+> No exemplo acima não será impresso os números 2 e 6, já que descartará os próximos códigos.  
+
+### Do While
+Faça ... Enquanto ...
+```php
+  do {
+    // Código
+  } while (condicao);
+```
+O teste é feito apenas no final das instruções, logo obrigatoriamente fará 1 interação, mesmo que não atenda as condições.
+
+```php
+$numero = 10;
+
+do {
+  echo $numero;
+} while ($numero < 9);
+```
+> Nesse exemplo mesmo que 10 seja maior que 9 a variável será impressa 1 vez.
+
+### For
+
+```php
+for(variavel; condicao; incremento) {
+  // Código
+}
+```
+
+```php
+for ($numero = 0; $numero < 10; $numero++) {
+  echo "X = $numero <br/ >";
+}
+```
+
+Também é possível usar o **break** e o continue.
+
+```php
+for ($numero; true ; $numero++) {
+
+  if ($numero >= 20) {
+    break;
+  }
+  echo "X = $numero <br/ >";
+}
+```
+> Nesse caso irá parar quando numero for menor ou igual a 20.
+
+[Voltar ao índice](#indice)
+
+****
