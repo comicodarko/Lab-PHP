@@ -1047,6 +1047,86 @@ for ($numero; true ; $numero++) {
 ```
 > Nesse caso irá parar quando numero for menor ou igual a 20.
 
+### Um pouco de prática
+```php
+$registros = [
+  ['titulo' => 'Título notícia 1', 'conteudo' => 'noticia 1'],
+  ['titulo' => 'Título notícia 2', 'conteudo' => 'noticia 2'],
+  ['titulo' => 'Título notícia 3', 'conteudo' => 'noticia 3']
+];
+
+// Recuperando array dentro de 1 aray
+
+$idx = 0;
+while($idx < count($registros)) {
+  echo '<h3>' . $registros[$idx]['titulo'] . '</h3>';
+  echo '<p>' . $registros[$idx]['conteudo'] . '</p>';
+  $idx ++;
+}
+```
+> Lembrando que nesse caso o count vai até 3, e não temos indice 3, por isso a condição terá que usar < e não =.  
+
+## Foreach
+
+É especializado para arrays e objetos, logo o controle de finalização de interações será automático, ele para quando não existe mais elementos.
+
+```php
+$itens = ['sofá', 'mesa', 'cadeira', 'fogão', 'geladeira'];
+
+foreach($itens as $item) {
+  echo $item.'<br/ >';
+}
+```
+> Perceba que **$item** é a variável cujo cada elemento do array irá ficar. Mudando a cada interação.
+
+### Como recuperar os indícies com Foreach
+
+Na definição dos parâmetros do Foreach:
+```php
+foreach ($funcionarios as $id => $nome_funcionario) {
+  echo $nome_funcionario . "<br />";
+}
+```
+
+## Foreach em Arrays associativos e Foreach encadeados
+
+```php
+$funcionarios = [
+  ['nome' => 'João', 'salário' => 2500],
+  ['nome' => 'Maria', 'salário' => 3500],
+  ['nome' => 'Júlia', 'salário' => 1100]
+];
+
+foreach ($funcionarios as $id => $funcionari{
+  foreach ($funcionario as $id2 => $valor) {
+    echo "$id2 - $valor <br />";
+  }
+  echo '<hr/ >';
+}
+```
+> Caso seja adicionados novos registros o Foreach terá a inteligencia de percorrer os mesmos.
+
+### Pequeno exercicio para fixação
+
+> Crie um script capaz de produzir, através de um laço de repetição, um array com 6 elementos numéricos aleatórios entre 1 e 60, simulando o funcionamento do sorteio da mega sena. Atente-se ao fato de que os números aleatórios contidos dentro do array não podem ser repetidos.
+
+```php
+$numeros = [];
+
+  while(count($numeros) <= 5) {
+    $num = rand(1, 60);
+
+  if(!in_array($num, $numeros)) {
+      $numeros[] = $num;
+    }
+  }
+
+print_r($numeros);
+
+```
+
 [Voltar ao índice](#indice)
 
 ****
+
+[Continua em 02 - Desenvolvendo a ]()
