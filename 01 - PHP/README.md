@@ -1,29 +1,29 @@
 ## <a name="indice">Índice</a>
 
-0. [Iniciando com servidor Apache, PHP e MySQL](https://github.com/comicodarko/Lab-PHP)
-  - 0.1 [Configurando o back-end com XAMPP](https://github.com/comicodarko/Lab-PHP/#parte00-1)
-  - 0.2 [Conhecendo o XAMPP](https://github.com/comicodarko/Lab-PHP/#parte00-2)
- 
-1. [PHP]()
-  - 1.1 [Embutindo blocos PHP em páginas HTML](#parte01-1)
-  - 1.2 [Comentários](#parte01-2)
-  - 1.3 [Variáveis](#parte01-3)
-  - 1.4 [Operadores de comparação](#parte01-4)
-  - 1.5 [Operadores Lógicos](#parte01-5)
-  - 1.6 [Operador Ternário](#parte01-6)
-  - 1.7 [Switch](#parte01-7)
-  - 1.8 [Casting de tipos](#parte01-8)
-  - 1.9 [Operadores aritméticos](#parte01-9)
-  - 1.10 [Operadores de incremento/decremento](#parte01-10)
-  - 1.11 [Funções](#parte01-11)
-  - 1.12 [Funções para manipular strings](#parte01-12)
-  - 1.13 [Funções para tarefas matemáticas](#parte01-13)
-  - 1.14 [Funções para manipular datas](#parte01-14)
-  - 1.15 [Arrays](#parte01-15)
-  - 1.16 [Arrays - Métodos de pesquisa](#parte01-16)
-  - 1.17 [Extra: False, Null e Empty](#parte01-17)
-  - 1.18 [Funções para manipular Arrays](#parte01-18)
-  - 1.19 [Loops](#parte01-19)
+1. [PHP](https://github.com/comicodarko/Lab-PHP)
+    - 1.1 [Embutindo blocos PHP em páginas HTML](#parte01-1)
+    - 1.2 [Comentários](#parte01-2)
+    - 1.3 [Variáveis](#parte01-3)
+    - 1.4 [Operadores de comparação](#parte01-4)
+    - 1.5 [Operadores Lógicos](#parte01-5)
+    - 1.6 [Operador Ternário](#parte01-6)
+    - 1.7 [Switch](#parte01-7)
+    - 1.8 [Casting de tipos](#parte01-8)
+    - 1.9 [Operadores aritméticos](#parte01-9)
+    - 1.10 [Operadores de incremento/decremento](#parte01-10)
+    - 1.11 [Funções](#parte01-11)
+    - 1.12 [Funções para manipular strings](#parte01-12)
+    - 1.13 [Funções para tarefas matemáticas](#parte01-13)
+    - 1.14 [Funções para manipular datas](#parte01-14)
+    - 1.15 [Arrays](#parte01-15)
+    - 1.16 [Arrays - Métodos de pesquisa](#parte01-16)
+    - 1.17 [Extra: False, Null e Empty](#parte01-17)
+    - 1.18 [Funções para manipular Arrays](#parte01-18)
+    - 1.19 [Loops](#parte01-19)
+    
+2. [Desenvolvendo a primeira aplicação WEB com PHP](https://github.com/comicodarko/HelpDesk)
+
+****
 
 # O que é o PHP?
 
@@ -1129,4 +1129,4 @@ print_r($numeros);
 
 ****
 
-[Continua em 02 - Desenvolvendo a ]()
+[Continua em 02 - Desenvolvendo a primeira aplicação WEB com PHP](https://github.com/comicodarko/HelpDesk)
