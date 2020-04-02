@@ -4,10 +4,27 @@
     class Funcionario {
 
         //Atributos 
-        public $nome = 'Fábio';
-        public $telefone = '40028922';
-        public $numFilhos = 'nenhum';
+        public $nome = null;
+        public $telefone = null;
+        public $numFilhos = null;
         
+        //Getters Setters
+        function setNome($nome) {
+            $this->nome = $nome;
+        }
+        
+        function setNumFilhos($numFilhos) {
+            $this->numFilhos = $numFilhos;
+        }
+
+        function getNome() {
+            return $this->nome;
+        }
+
+        function getNumFilhos() {
+            return $this->numFilhos;
+        }
+
         //Métodos
         function resumirCadFunc() {
             return "$this->nome possui $this->numFilhos filho(s)";

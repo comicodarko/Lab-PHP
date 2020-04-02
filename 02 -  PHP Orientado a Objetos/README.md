@@ -7,6 +7,7 @@
 3. [PHP Orientado a objetos]()
     - 3.1 [Introdução a Orientação a Objetos](#parte03-1)
     - 3.2 [Pilar da Abstração](#parte03-2)
+    - 3.3 [Getters e Setteres](#parte03-3)
 ****
 
 ## <a name="parte03-1">Introdução</a>
@@ -90,6 +91,37 @@ Exemplo 'prático':
 	
     echo $y->resumirCadFunc();
 ```
+
+[Voltar ao índice](#indice)
+
+****
+
+## <a name="parte03-3">Getters e Setteres</a>
+
+São métodos que nos permitem atender a uma **convenção**. A melhor forma de acessar e manipular os atributos de nossos objetos.
+
+**Set** - Nos permite **setar** um valor.
+```php
+function setNome($nome) {
+    $this->nome = $nome;
+}
+        
+function setNumFilhos($numFilhos) {
+    $this->numFilhos = $numFilhos;
+}
+```
+**Get** - Nos permite **recuperar** um valor.
+```php
+function getNome() {
+    return $this->nome;
+}
+
+function getNumFilhos() {
+    return $this->numFilhos;
+}
+```
+
+
 
 
 [Voltar ao índice](#indice)
