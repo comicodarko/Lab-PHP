@@ -21,15 +21,27 @@ Anotações e o possíveis devaneios sobre PHP
     - 1.11 [Funções](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-11)
     - 1.12 [Funções para manipular strings](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-12)
     - 1.13 [Funções para tarefas matemáticas](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-14)
-   - 1.14 [Funções para manipular datas](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-14)
+    - 1.14 [Funções para manipular datas](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-14)
     - 1.15 [Arrays](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-15)
     - 1.16 [Arrays - Métodos de pesquisa](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-16)
     - 1.17 [Extra: False, Null e Empty](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-17)
-   - 1.18 [Funções para manipular Arrays](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-18)
-   - 1.19 [Loops](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-19)
+    - 1.18 [Funções para manipular Arrays](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-18)
+    - 1.19 [Loops](https://github.com/comicodarko/Lab-PHP/tree/master/01%20-%20PHP#parte01-19)
 
 2. [Desenvolvendo a primeira aplicação WEB com PHP](https://github.com/comicodarko/HelpDesk)
+    - 2.1 [GET e POST](https://github.com/comicodarko/HelpDesk#parte02-1)
+    - 2.2 [Autenticando usuário](https://github.com/comicodarko/HelpDesk#parte02-2)
+    - 2.3 [Protegendo páginas restritas com SESSION](https://github.com/comicodarko/HelpDesk#parte02-3)
+    - 2.4 [Incorporando scripts](https://github.com/comicodarko/HelpDesk#parte02-4)
+    - 2.5 [Logoff](https://github.com/comicodarko/HelpDesk#parte02-5)
+    - 2.6 [Registrando chamadas](https://github.com/comicodarko/HelpDesk#parte02-6)
+    - 2.7 [Consultando chamados](https://github.com/comicodarko/HelpDesk#parte02-7)
+    - 2.8 [Controle de perfil](https://github.com/comicodarko/HelpDesk#parte02-8)
+
+3. [PHP Orientado a Objetos](https://github.com/comicodarko/Lab-PHP/tree/master/02%20-%20%20PHP%20Orientado%20a%20Objetos)
+
 ****
+
 
 ## <a name="parte00">Iniciando com servidor Apache, PHP e MySQL </a>
 
