@@ -121,9 +121,40 @@ function getNumFilhos() {
 }
 ```
 
+## Getters e Setters mágicos (overloading de atributos e métodos) 
 
+Deve ter notado que para cada atributo 2 métodos são criados (um Getter e um Setter) isso acaba ficando bastante extenso e dedundante.
 
+### Overloading (sobrecarga)
+A ideia é criar um único metodo SET e um uníco método GET, capaz de se adaptar ao atributo que queremos manipular.
+
+```php
+function __set($atributo, $valor) {
+            $this->$atributo = $valor;
+        }
+
+        function __get($atributo) {
+            return $this->$atributo;
+        }
+//_________________
+$y->__set('nome', 'josé');
+$y->__set('numFilhos', 2);
+
+echo $y->__get('nome') . ' possui ' . $y->__get('numFilhos') . ' filhos.';
+
+```
+
+## Chamando métodos internamente
+
+A função resumirCadFunc funcionará corretamente, porém para boas práticas use overloading:
+
+```php
+function resumirCadFunc() {
+        return $this->__get('nome') . " possui " . $this->__get('numFilhos') . " filhos(s)";
+}
+```
 
 [Voltar ao índice](#indice)
 
 ****
+
